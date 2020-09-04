@@ -1,0 +1,9 @@
+	component SERIAL_COMMUNICATION_FPGA_BNO055 is
+		port (
+			clk_clk                        : in  std_logic                    := 'X'; -- clk
+			pio_external_connection_export : out std_logic_vector(7 downto 0);        -- export
+			uart_external_connection_rxd   : in  std_logic                    := 'X'; -- rxd
+			uart_external_connection_txd   : out std_logic                            -- txd
+		);
+	end component SERIAL_COMMUNICATION_FPGA_BNO055;
+
